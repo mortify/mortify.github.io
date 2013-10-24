@@ -15,10 +15,29 @@
     <!-- Begin MailChimp Signup Form -->
 	<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 	<style type="text/css">
-		#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
-		/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-		   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+		#mc_embed_signup {
+			background:#fff; 
+			clear:left; 
+			font:14px Helvetica,Arial,sans-serif;  
+			width:600px;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-top: 50px;
+			margin-left: -130px;
+		}
+
+		#mortify_icon {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-top: -50px;
+			margin-left: -130px;
+		}
 	</style>
+	<div id="mortify_icon">
+	<img src="mortify.png" alt="Mortify">
+	</div>
 	<div id="mc_embed_signup">
 	<form action="http://getmortify.us3.list-manage.com/subscribe/post?u=c18de1af4f15a0cc75c7c3657&amp;id=471532e20b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 		<label for="mce-EMAIL">Subscribe to our mailing list</label>
