@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
@@ -12,40 +13,130 @@
   </head>
 
   <body>
-    <!-- Begin MailChimp Signup Form -->
-	<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+  <!-- Begin MailChimp Signup Form -->
 	<style type="text/css">
-		#mc_embed_signup {
-			background:#fff; 
-			clear:left; 
-			font:14px Helvetica,Arial,sans-serif;  
-			width:600px;
-			position: fixed;
-			top: 50%;
-			left: 50%;
-			margin-top: 50px;
-			margin-left: -130px;
-		}
+    body {
+      margin: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      background-color: #3c3c3c;
+    }
 
-		#mortify_icon {
-			position: fixed;
-			top: 50%;
-			left: 50%;
-			margin-top: -50px;
-			margin-left: -130px;
-		}
+    #content {
+      color: white;
+      text-align: center;
+    }
+    .center-container.is-table {
+      display: table;
+      width: 100%;
+      height: 100%;
+
+      max-width: 600px;
+      min-height: 300px;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    .is-table .table-cell {
+      display: table-cell;
+      vertical-align: middle;
+
+      background: #c83f3f;
+      height: 400px;      
+    }
+    .is-table .center-block {
+      margin: 0 auto;
+    }
+
+    #logo {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+
+    #viral-message {
+      font-weight: 300;
+      max-width: 200px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+    #mce-EMAIL {
+      min-width: 250px;
+      max-width: 300px;
+
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 4px 0px;
+      font-size: 16px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      color: white;
+      border: none;
+      border-bottom: 1px solid white;
+      background-color: #c83f3f;
+      width: 50%;
+    }
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color:    #e49f9f;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    #e49f9f;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    #e49f9f;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color:    #e49f9f;
+    }
+
+    #mc-embedded-subscribe {
+      display: inline-block;
+      margin: 0;
+      margin-left: 10px;
+      padding: 6px 12px;
+      border: none;
+      background: white;
+      color: #c83f3f;
+      font-size: 16px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 600;
+    }
+    #mc-embedded-subscribe:hover {
+      opacity: 0.9;
+    }
+
+    *:focus {
+      outline: none;
+    }
+    textarea:focus, input:focus{
+      outline: 0;
+    }
+
 	</style>
-	<div id="mortify_icon">
-	<img src="mortify.png" alt="Mortify">
-	</div>
-	<div id="mc_embed_signup">
-	<form action="http://getmortify.us3.list-manage.com/subscribe/post?u=c18de1af4f15a0cc75c7c3657&amp;id=471532e20b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		<label for="mce-EMAIL">Subscribe to our mailing list</label>
-		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-		<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-	</form>
-	</div>
 
-<!--End mc_embed_signup--> 
+    <div class="center-container is-table">
+      <div class="table-cell">
+        <div class="center-block">
+        
+          <div id="content">
+            <img id="logo" src="mortify-logo.png" alt="Mortify">
+            <div id="viral-message">
+              It's the app that gamifies death. Get notified when we launch.
+            </div>
+          	<div id="mc_embed_signup">
+            	<form action="http://getmortify.us3.list-manage.com/subscribe/post?u=c18de1af4f15a0cc75c7c3657&amp;id=471532e20b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            		<!-- <label for="mce-EMAIL">Subscribe to our mailing list</label> -->
+            		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
+            		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            	</form>
+          	</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <!--End mc_embed_signup--> 
   </body>
 </html>
